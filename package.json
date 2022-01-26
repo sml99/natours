@@ -5,7 +5,9 @@
     "main": "app.js",
     "scripts": {
         "start:dev": "nodemon server.js",
-        "start:prod": "SET NODE_ENV=production & nodemon server.js"
+        "start:prod": "SET NODE_ENV=production & nodemon server.js",
+        "db:tour-import": "node dev-data/import-dev-data.js --import",
+        "db:tour-delete": "node dev-data/import-dev-data.js --delete"
     },
     "author": "SML",
     "license": "ISC",
